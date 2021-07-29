@@ -1,0 +1,109 @@
+<script>
+    console.log("welcome to nodejs");
+    //=         assignment
+    //==        compares only value
+    //===       compares value & datatype
+    //var
+    var a = b = c = 10;
+    console.log( a, b, c );                                 //10 10 10
+    true?console.log("Hello"):console.log("Bye");           //Hello
+    //true ===> 1
+    //false ===> 0
+    !1?console.log("Hello"):console.log("Bye");              //Bye
+    console.log( true + 1 );                                //2
+    console.log( true + "1" );                              //true1
+    console.log( true + +"2" );                             //3
+    console.log( false + false + "1"  );                    //01
+    console.log( true + true + false + "0");                //20
+
+
+    console.log( 10 == "10" );                              //true
+    console.log( 10 === "10" );                             //false
+
+    console.log( [] == 0 );                                 //true
+    //console.log( [] == "0" );                             //false
+
+
+    //datatypes  - ES11
+    //1) bigint
+    //2) Symbol
+    //3) undefined
+    //4) null
+    //5) string
+    //6) number
+    //7) boolean
+
+
+    // bigint
+    // > 2^53-1
+    // suffix with "n"
+    var my_number = 123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789n;
+    console.log( my_number );
+
+    var n1 = 1n;
+    var n2 = 2n;
+    console.log( n1+n2 );           //3n
+
+
+    var v1 = 1;
+    var v2 = 2n;
+    //console.log(v1+v2);             //Cannot mix BigInt and other types, use explicit conversions
+
+
+    //typeof
+    //to know datatype
+    console.log( typeof 1n );       //bigint
+
+
+    //Symbol
+    //used to achieve the secuirity
+    var s1 = "Hello";
+    var s2 = "Hello";
+    console.log(s1, s2);                //Hello Hello
+    console.log(s1==s2);                //true
+    console.log(s1 === s2 );            //true
+
+
+    var s3 = Symbol("Hello");
+    var s4 = Symbol("Hello");
+    console.log( s3 == s4 );            //false
+    console.log( Symbol.for("Hello") == Symbol.for("Hello") );          //true   
+
+    console.log( typeof s3 );                           //symbol
+    console.log( typeof Symbol.for("Hello") );          //null
+
+
+    var x;
+    console.log( x );                   //undefined
+
+    var y;
+    y = null;
+    console.log( y );                   //null
+
+
+    console.log(
+        typeof "Hello",
+        typeof 100,
+        typeof true,
+        typeof 100n,
+        typeof undefined,
+        typeof null,
+        typeof [],
+        typeof function fun_one(){},
+        typeof {},
+        typeof Symbol(100)
+    );
+
+    var a = {x:1};
+    var b = {x:1};
+    console.log( a==b );                //false
+    console.log( a === b );             //false
+
+    var a1 = 20.50;
+    var b1 = 20.50;
+    console.log( a1+b1 );               //41
+
+
+
+
+</script>

@@ -105,5 +105,44 @@
 
 
 
+    //const
+    //reinitilization not possible
+    const c1 = 100;
+    //c1 = 200;               //Uncaught TypeError: Assignment to constant variable.
+
+    const c2 = "Hello";
+    //c2 = "Welcome";             //Assignment to constant variable.
+
+
+    const c3 = [10,20,30,40,50];
+    //c3 = [];                    //Uncaught TypeError: Assignment to constant variable.
+    c3[0] = 100;
+    c3[4] = 500;
+    console.log( c3 );            //[100, 20, 30, 40, 500]
+    c3[5] = 600;
+    console.log( c3 );            //[100, 20, 30, 40, 500, 600]
+
+
+    const my_obj = {
+        "key1" : "Hello_1",
+        "key2" : "Hello_2",
+        "key3" : "Hello_3"
+    };
+    //my_obj={}               //Uncaught TypeError: Assignment to constant variable.
+    my_obj.key1 = "ReactJS";
+    my_obj.key2 = "NodeJS";
+    my_obj.key3 = "MongoDB";
+    console.log( my_obj );      //{key1: "ReactJS", key2: "NodeJS", key3: "MongoDB"}
+
+
+    for(let i=0;i<5;i++){
+       
+    }
+    console.log( i );           // Uncaught ReferenceError: i is not defined
+
+
+
+
+
 
 </script>

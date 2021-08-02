@@ -1,0 +1,145 @@
+<!--
+    - particular business logic called as function.
+
+    - functions are used to reuse the business logic.
+
+   Syntax
+   ======
+   1) function definition
+
+   2) function calling
+
+   function definition
+   *******************
+   function functionname(arg1,arg2,arg3,.....argn){
+       //business logic
+   }
+
+
+   function calling
+   ****************
+   functionname(param1,param2,param3,......paramn);
+-->
+
+
+<!--
+<script>
+    function fun_one(){
+        return "Hello";
+    }
+
+    console.log( fun_one() );
+
+    console.log( fun_one );
+
+</script>
+-->
+
+
+<!--
+<script>
+    function fun_one(arg1,arg2,arg3){
+        console.log( arg1, arg2, arg3 );
+    }
+    fun_one();                                  //undefined undefined undefined
+    fun_one("Hello_1","Hello_2","Hello_3");     //Hello_1 Hello_2 Hello_3
+    fun_one(undefined,undefined,"Hello_3");     //undefined undefined "Hello_3"
+    fun_one(null,null,null);                    //null null null
+</script>
+-->
+
+<!--
+<script>
+    function fun_one(arg1,arg2,arg3){
+        console.log( arg1() );
+        console.log( arg2() );
+        console.log( arg3() );
+    }
+
+    fun_one( function fun_two(){
+        return "Hello_1";
+    }, function fun_three(){
+        return "Hello_2";
+    }, function fun_four(){
+        return "Hello_3";
+    } );
+
+</script>
+-->
+
+
+<!--
+<script>
+    function fun_one(){
+        return "Hello";
+    }
+
+    var arr = [];
+
+    for(var i=0;i<5;i++){
+        arr.push( fun_one );
+    }
+
+    for(var i=0;i<arr.length;i++){
+        console.log( arr[i]() )
+    };
+</script>
+-->
+
+
+<!--
+    arrow functions
+    ===============
+    ES6
+
+    =>
+
+    function definition
+    *******************
+    var variablename = (arg1,arg2,arg3,....argn)=>{
+        //business logic
+    }
+
+    //call the function
+    variablename(param1,param2,param3,.....paramn);
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

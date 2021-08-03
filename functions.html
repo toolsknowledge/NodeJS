@@ -96,13 +96,253 @@
 
     function definition
     *******************
-    var variablename = (arg1,arg2,arg3,....argn)=>{
+    var variablename = (arg1,arg2,arg3,arg4,.....argn)=>{
         //business logic
     }
 
-    //call the function
-    variablename(param1,param2,param3,.....paramn);
+    function calling
+    ****************
+    variablename(param1,param2,param3,param4,......paramn);
 -->
+
+<!--
+<script>
+    let fun_one = ()=>{
+        return "welcome to arrow functions";   
+    };
+    console.log( fun_one() );                   //welcome to arrow functions
+</script>
+-->
+
+
+<!--
+<script>
+    let my_fun = (arg1,arg2,arg3)=>{
+        console.log( arg1, arg2, arg3 );
+    }
+    my_fun();                                   //undefined undefined undefined
+    my_fun("ReactJS","NodeJS","MongoDB");       //ReactJS NodeJS MongoDB
+    my_fun(undefined,undefined,"Hello_3");      //undefined undefined "Hello_3"
+    my_fun(null,null,null);                     //null null null
+</script>
+-->
+
+
+
+<!--
+<script>
+    let fun_one = ()=>{
+        return "Hello";
+    };
+
+    console.log( fun_one );
+    console.log( fun_one() );
+
+</script>
+-->
+
+
+
+<!-- <script>
+    let outer = ()=>{
+        return ()=>{
+            return "Hello";
+        }
+    };
+
+    console.log( outer()() );               //Hello
+</script> -->
+
+
+<!--
+    JSON
+    ****
+       - Java Script Object Notation
+
+       - JSON, used to transfer the data over the network
+
+       - JSON is light weight.
+
+        - Objects ===> { }      Arrays ===> []      data ===> key & value pairs
+
+        key & value separated by using ":"
+
+        key & value pairs separated by using ","
+-->
+
+
+<!--
+<script>
+    let obj = {
+        "key1" : "Hello_1",
+        "key2" : "Hello_2",
+        "key3" : "Hello_3"
+    };
+    console.log(
+        obj.key1,
+        obj.key2,
+        obj.key3
+    );                  //Hello_1 Hello_2 Hello_3
+</script>
+-->
+
+
+<!--
+<script>
+    let obj = {
+        "key1" : "Hello_1",
+        "key1" : "Hello_2"
+    }
+    console.log( obj.key1 );            //Hello_2
+    console.log( obj );                 //{key1: "Hello_2"}
+</script>
+-->
+
+<!--
+<script>
+    let obj = {
+        123 : "Hello"
+    }
+    console.log( obj );             //{123: "Hello"}
+    console.log( obj["123"] );      //Hello       
+</script>
+-->
+
+
+<!--
+<script>
+    let obj = {
+        sub_one : "ReactJS",
+        sub_two : "NodeJS",
+        sub_three : "MongoDB"
+    }
+    //for.....in loop
+    for(let k in obj){
+        console.log( obj[k] );
+    }
+</script>
+-->
+
+
+<script>
+    let arr = [
+        {"p_id":111,"p_name":"p_one","p_cost":10000},
+        {"p_id":222,"p_name":"p_two","p_cost":20000},
+        {"p_id":333,"p_name":"p_three","p_cost":30000},
+        {"p_id":444,"p_name":"p_four","p_cost":40000},
+        {"p_id":555,"p_name":"p_five","p_cost":50000}
+    ]
+    document.write(`<table border="1"
+                           align="center"
+                           cellpadding="10px"
+                           cellspacing="10px">
+                        <tr>
+                            <th>P_ID</th>
+                            <th>P_NAME</th>
+                            <th>P_COST</th>
+                        </tr>`);
+    arr.forEach((element)=>{
+        document.write(`
+                <tr>
+                    <td>${element.p_id}</td>
+                    <td>${element.p_name}</td>
+                    <td>${element.p_cost}</td>
+                </tr>
+        `);
+    })
+    document.write(`</table>`);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

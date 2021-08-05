@@ -89,6 +89,85 @@ console.log( arr5 );                    //[ 20, 30, 40 ]
 
 
 
+//map()
+console.log(
+    [1,2,3,4,5].map((element,index)=>{
+        return element * 100;
+    })
+);          //[ 100, 200, 300, 400, 500 ]
+
+
+console.log(
+    [1,2,3,4,5].map((element,index)=>{
+        return element * 10;
+    }).map((element,index)=>{
+        return "$"+element;
+    })
+);      //[ '$10', '$20', '$30', '$40', '$50' ]
+
+
+
+console.log(
+    [1,2,3,4,5].filter((element,index)=>{
+        return element>=3;
+    })
+);          //[ 3, 4, 5 ]
+
+
+console.log(
+    [1,2,3,4,5].map((element,index)=>{
+        return element * 100;
+    }).filter((element,index)=>{
+        return element<=200;
+    })
+);      //[ 100, 200 ]
+
+
+
+console.log(
+    [1,2,3,4,5].reduce((accumlator,element)=>{
+        return accumlator+element;
+    })
+);          //15
+
+
+console.log(
+    [10,20,30].reduce((accumlator,element)=> accumlator+element, 10)
+);      //70
+
+
+console.log(
+    [1,2,3,4,5].map((element,index)=>{
+        if(index == 0){
+            return element*10;
+        }else{
+            return element*20;
+        }
+    }).filter((element,index)=>{
+        return element <= 100;
+    }).reduce((accumlator,element)=> accumlator+element, 100 )
+);          //390
+
+
+
+
+//indexOf()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

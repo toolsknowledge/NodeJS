@@ -152,6 +152,57 @@ console.log(
 
 
 //indexOf()
+let my_arr1 = [10,20,30,10,20,30];
+my_arr1.forEach((element,index)=>{
+    console.log( my_arr1.indexOf(element) );
+});
+
+
+let my_arr2 = [1,2,3,1,2,3];
+console.log(
+    my_arr2.filter((element,index)=>{
+        return my_arr2.indexOf(element) == index;
+    })
+);          //[ 1, 2, 3 ]
+
+
+let my_arr3 = [
+    {"sal" : 20000},
+    {"sal" : 40000},
+    {"sal" : 60000},
+    {"sal" : 80000},
+    {"sal" : 100000}
+];
+console.log(
+    my_arr3.filter((element,index)=>{   
+        return element.sal >= 60000;
+    })
+);   //[ { sal: 60000 }, { sal: 80000 }, { sal: 100000 } ]
+
+
+
+
+
+let obj1 = {
+    "key1" : "Hello_1",
+    "key2" : "Hello_2",
+    "key3" : "Hello_3"
+};
+console.log( typeof obj1 );                 //object
+let str = JSON.stringify(obj1);
+console.log( typeof str );                  //string
+let obj2 = JSON.parse(str);
+console.log( typeof obj2 );                 //object
+console.log( Object.keys(obj1) );           //[ 'key1', 'key2', 'key3' ]
+console.log( Object.values(obj1) );         //[ 'Hello_1', 'Hello_2', 'Hello_3' ]
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,204 @@
+Introduction
+************
+    - NodeJS is the Server Side Scripting Language.
+
+    - NodeJS, used to implete the Servers.
+
+            Http Server
+
+            TCP Server
+
+    - we will implement Node Applications in two ways.
+
+        1) JavaScript
+
+        2) TypeScript
+    
+    - JavaScript is the Scripting Language and won't supports OOPS.
+
+    - TypeScript is the Programming Language and supports OOPS.
+
+    - we will implement the servers by using either "predefined" or "3rd" party libraries
+
+
+1) http
+
+    - http library used to develop the http servers.
+
+
+2) fs
+
+    - fs stands for file system
+
+    - fs module, used to interact with the "flat files".
+
+    Ex
+        XML files
+
+        JSON files
+
+        Text Files
+
+
+3) express
+
+    - express is the "framework".
+
+    - express framework used to develop the restful services.
+
+    Ex.
+        GET
+        POST
+        PUT
+        DELETE
+        PATCH
+
+
+4) mysql
+
+    - used to interact with the mysql database.
+
+
+5) mssql
+
+    - used to connect to SQLServer.
+
+
+6) mongodb & mongoose
+
+    - either mongodb or mongoose used to connect to mongodb database.
+
+    - mongodb module will connect to mongodb database without "schema"
+
+    - mongoose module will connect to mongodb database with "Schema".
+
+    - Schema means rules and regulations.
+
+
+6) cors
+
+    - used to enable the CORS Policy.
+
+    - enabling communication between different ports called as cors policy.
+
+7) body-parser
+
+    - used to receive the data from client application
+
+
+8) jwt-simple / jsonwebtoken
+
+    - used to generate the tokens.
+
+    - in general, we will use these tokens for authentication purpose.
+
+    - this authentication called as token based authentication.
+
+
+9) multer
+
+    - used to upload the images to the server.
+
+
+10) socket.io
+
+    - used to implement the chat applications
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

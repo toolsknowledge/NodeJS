@@ -81,6 +81,7 @@ Introduction
 
     - enabling communication between different ports called as cors policy.
 
+
 7) body-parser
 
     - used to receive the data from client application
@@ -103,6 +104,117 @@ Introduction
 10) socket.io
 
     - used to implement the chat applications
+
+
+11) oracledb
+
+    - used to connect to oracle database.
+
+
+12) nodemailer
+
+    - it is used to send the email from node server
+
+13) encryptjs
+
+    - used to encrypt/decrypt the passwords.
+
+
+14) passport
+
+    - passport used to implement the authentication in node server
+
+
+    - we will download above libraries in two ways.
+
+    1) npm
+
+    2) yarn
+
+
+
+Note : all the above libraries downloads to "node_modules" directory in current path
+
+
+Software Installations
+**********************
+
+1) download and install NodeJS
+
+website : https://nodejs.org/en/
+
+file    : node-v16.6.1-x64.msi
+
+
+2) install yarn tool
+
+    > npm install -g yarn
+
+    "-g" stands for global Installation
+
+
+3) install nodemon tool
+
+    - it is used to start the node server in watch mode.
+
+    - this tool, watches the file changes continuosly.
+
+    > npm install -g nodemon
+
+
+4) install Visual Studio Code
+
+    website : https://code.visualstudio.com/docs/?dv=win
+
+    file    : VSCodeUserSetup-x64-1.59.0.exe
+
+
+5) install Postman
+
+    - used to test the rest api calls
+
+
+
+start the node server
+*********************
+Ex.
+    app.js
+
+
+> node app.js
+
+> nodemon app.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

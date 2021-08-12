@@ -186,6 +186,35 @@ Ex.
 > nodemon app.js
 
 
+1) ExpressJS
+
+2) CRUD 
+
+3) authentication & secuirity
+
+4) exceptional handling
+
+
+                                ***** ExpressJS *****
+
+    - ExpressJS is framework.
+
+    - ExpressJS used to develop the rest api's.
+
+            Ex.
+                    GET
+                    POST
+                    PUT
+                    DELETE
+                    PATCH
+                    
+    - express is the 3rd party framework.
+
+    - we will download express library by using either "npm" or "yarn" tool
+
+    - "express" framework downloads to "node_modules" folder in current path.
+
+
 
 
 

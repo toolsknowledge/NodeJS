@@ -1,0 +1,76 @@
+MongoDB CRUD Operations
+***********************
+    - MongoDB is NoSQL DataBase.
+
+    - MongoDB DataBase Supports JSON.
+
+    - MongoDB DataBase is "light" weight DataBase.
+
+    - MongoDB DataBase Running on "27017" Port Number.
+
+    - MongoDB DataBase provides cloud environment in the form of a "MongoDB Atlas".
+
+    - we can connect to MongoDB DataBase in two ways.
+
+            1) mongodb
+
+            2) mongoose
+
+    - "mongodb" module used to connect to mongodb DataBase without schema.
+
+    - "mongoose" module used to connect to mongodb DataBase with schema.
+
+    - rules & regulations called as schema.
+
+******************************************************************************************
+                    SQL                                 NoSQL
+******************************************************************************************
+Ex.
+        Oracle                                          MongoDB
+        MySQL                                           CassandraDB
+        SQLServer                                       RabbitMQ
+
+
+        DataBases                                       DataBases
+
+        tables                                          collections
+
+        records                                         documents
+
+        primary key                                     _id
+*******************************************************************************************
+
+DataBase Name : nodejs
+
+collection Name : products
+
+Password : admin
+
+Connection URL : mongodb+srv://admin:admin@cluster0.rtyas.mongodb.net/nodejs?retryWrites=true&w=majority
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

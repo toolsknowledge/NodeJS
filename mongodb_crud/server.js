@@ -9,6 +9,10 @@ const module1 = require("./get_products");
 app.use("/products",module1);
 const module2 = require("./post_products");
 app.use("/insert",module2);
+const module3 = require("./update_product");
+app.use("/update",module3);
+const module4 = require("./delete_product");
+app.use("/delete",module4);
 let port = process.env.PORT || 1234;
 app.listen(port,()=>{
     console.log("server listening the port number 8080");

@@ -3,6 +3,8 @@ const dotenv = require("dotenv");
 dotenv.config();
 const cors = require("cors");
 const app = express();
+const reuseConnection = require("mongo-express-req");
+app.use(reuseConnection(process.env.CONNECTION_URL));
 app.use(cors());
 app.use(express.json());
 const module1 = require("./get_products");

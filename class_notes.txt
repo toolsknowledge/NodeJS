@@ -72,6 +72,17 @@ mongodb_crud
 
 
 
+mongoose
+********
+        mongoose is the library
+
+        mongoose library used to interact with the mongodb database with rules and regulations
+
+        we will download mongoose with yarn tool or npm tool
+
+
+        > yarn add mongoose
+
 
 
 

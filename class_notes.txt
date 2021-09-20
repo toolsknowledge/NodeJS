@@ -85,6 +85,60 @@ mongoose
 
 
 
+=> download the libraries
+
+        > yarn add express mongoose cors bcryptjs
+
+
+=> create the data
+
+        data.js
+
+
+=> create the Schema
+
+        userModel.js
+
+
+=> create the server application
+
+        server.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

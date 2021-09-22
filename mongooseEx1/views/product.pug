@@ -1,0 +1,12 @@
+html
+  head
+  body
+    form(action='/product', method='POST')
+      p
+        | p_id: 
+        input(name='p_id', value='', type='number')
+        |          p_name: 
+        input(name='p_name', value='', type='text')
+        |          p_cost: 
+        input(name='p_cost', value='', type='number')
+      input(value='Submit', type='submit')

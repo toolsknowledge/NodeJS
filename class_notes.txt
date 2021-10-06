@@ -106,6 +106,81 @@ mongoose
 
 
 
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+upload images to aws s3 bucket
+
+passportjs
+
+bcryptjs
+
+payment gateways integration
+
+connection pooling
+
+aws/heroku cloud hosting
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+                        token based authentication system
+                        **********************************
+
+
+===============================
+tokenEx
+      server.js
+===============================
+
+                        AWS Deployment
+                        **************
+
+1) push code to GitHub Repository
+
+                node_syllabus
+
+2) create the application in AWS.
+
+                ElasticBeanStalk
+
+3) create the CI / CD Operation
+
+                CodePipeline
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

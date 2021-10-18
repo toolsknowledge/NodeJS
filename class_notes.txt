@@ -111,7 +111,7 @@ upload images to aws s3 bucket
 
 passportjs
 
-bcryptjs
+bcrypt
 
 payment gateways integration
 
@@ -119,6 +119,7 @@ connection pooling
 
 aws/heroku cloud hosting
 
+oauth2
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

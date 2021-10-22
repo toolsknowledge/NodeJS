@@ -1,5 +1,10 @@
 <fieldset>
     <legend>Login</legend>
+    
+    <% if (messages.error) { %>
+    <%= messages.error %>
+    <% } %>
+    
     <form method="POST" action="/login">
         <label>Email</label>
         <input type="email" id="email" name="email">

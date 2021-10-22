@@ -1,9 +1,33 @@
 const express = require("express");
 const bcrypt = require("bcrypt");
 const app = express();
+const passport = require("passport");
+const passportInitilize = require("./passport-config");
+const flash = require("express-flash");
+const session = require("express-session");
 app.use(express.urlencoded({extended:false}));
 
+passportInitilize(passport,
+email=>{
+        return users.find(user=> user.email === email);
+},
+id=>{
+    return users.find(user=> user.id === id);
+});
+
+
 app.set("view-engine","ejs");
+app.use(flash());
+app.use(session({
+    secret:"secrete",
+    resave:false,
+    saveUninitialized:false
+}));
+
+
+app.use(passport.initialize());
+app.use(passport.session());
+
 
 
 
@@ -15,6 +39,14 @@ app.get("/",(req,res)=>{
 app.get("/login",(req,res)=>{
     res.render("login.ejs");
 });
+
+app.post("/login",passport.authenticate('local',{
+    successRedirect:"/",
+    failureRedirect:"/login",
+    failureFlash:true
+}));
+
+
 
 app.get("/register",(req,res)=>{
     res.render("register.ejs");
